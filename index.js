@@ -17,7 +17,7 @@ console.log(req.query.Qntrl);
   console.log(req.body);
 //   res.json({message:"request received from postman"});
 // res.json({message:'post working'})
-res.json(req.body);
+res.json({"message" : `the paramaeter is ${req.query.Qntrl}`);
 })
 app.get("/",(req,res)=>{
     res.json({message:'hello world'})
