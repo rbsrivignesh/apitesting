@@ -17,7 +17,19 @@ console.log(req.query.Qntrl);
   console.log(req.body);
 //   res.json({message:"request received from postman"});
 // res.json({message:'post working'})
-res.json({"message" : `the paramaeter is ${req.query.Qntrl}`});
+res.json({"message" : `the paramaeter from post is ${req.query.Qntrl}`});
+})
+app.post("/post1",(req,res)=>{
+    // console.log("working");
+    // console.log(req.params);
+//     console.log(req.params);
+    // console.log(req);
+console.log(req.query.Qntrl);
+//   console.log("line 14");
+  console.log(req.body);
+//   res.json({message:"request received from postman"});
+// res.json({message:'post working'})
+res.json({"message" : `the paramaeter from post1 is ${req.query.Qntrl}`});
 })
 app.get("/",(req,res)=>{
     res.json({message:'hello world'})
