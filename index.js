@@ -32,7 +32,7 @@ console.log(req.query.Qntrl);
 res.json({"message" : `the paramaeter from post1 is ${req.query.Qntrl}`});
 })
 app.get("/",(req,res)=>{
-    res.json({message:'hello world'})
+    res.json({data : [{name : "Sri Vignesh RB1", age :"1"},{name:"Sri Vignesh RB2", age :"2"},{name: "Sri Vignesh RB3", age:"3"}]} )
 })
 app.listen(port,()=>{
     console.log(`running on port ${port}`);
