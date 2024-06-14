@@ -32,7 +32,8 @@ console.log(req.query.Qntrl);
   console.log(req.body);
 //   res.json({message:"request received from postman"});
 // res.json({message:'post working'})
-res.json({"message" : `the paramaeter from post1 is ${req.query.Qntrl}`});
+// res.json({"message" : `the paramaeter from post1 is ${req.query.Qntrl}`});
+res.json({"message" : `the paramaeter from post1 is ${req.query}`});
 })
 app.get("/",(req,res)=>{
     res.json({data : [{name : "Sri Vignesh RB1", age :"1"},{name:"Sri Vignesh RB2", age :"2"},{name: "Sri Vignesh RB3", age:"3"}]} )
