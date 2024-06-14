@@ -19,6 +19,7 @@ console.log(req.query.Qntrl);
 // res.json({message:'post working'})
 console.log(req);
 // res.json({"message" : `the paramaeter from post is ${req.query.Qntrl}`});
+    req = JSON.parse(req);
 res.json({"message" : `the paramaeter from post is ${req}`});
 })
 app.post("/post1",(req,res)=>{
