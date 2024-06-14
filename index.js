@@ -17,6 +17,7 @@ console.log(req.query.Qntrl);
   console.log(req.body);
 //   res.json({message:"request received from postman"});
 // res.json({message:'post working'})
+console.log(req);
 res.json({"message" : `the paramaeter from post is ${req.query.Qntrl}`});
 })
 app.post("/post1",(req,res)=>{
