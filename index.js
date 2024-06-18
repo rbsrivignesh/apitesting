@@ -39,8 +39,7 @@ app.get("/",(req,res)=>{
     res.json({data : [{name : "Sri Vignesh RB1", age :"1"},{name:"Sri Vignesh RB2", age :"2"},{name: "Sri Vignesh RB3", age:"3"}]} )
 })
 app.get("/get",(req,res)=>{
-    console.log(req.query.Qntrl);
-    res.json({data : [{name : "Sri Vignesh RB1", age :"1"},{name:"Sri Vignesh RB2", age :"2"},{name: "Sri Vignesh RB3", age:"3", "value" : `${req.query.Qntrl}`}]} )
+res.json({"message" : `the paramaeter from get is ${req.query.Qntrl}`});
 })
 
 app.listen(port,()=>{
